@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --color-primario: #FF6B6B;
+    --color-secundario: #4ECDC4;
+    --color-acento: #FFD93D;
+    --color-texto: #333333;
+    --color-fondo: #F7F7F7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    background-color: var(--color-primario);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
+}
+
+/* Estilos específicos para la página de inicio */
+.destacado {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.destacado img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.destacado h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+/* Estilos para la página de destinos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.destino {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destino:hover {
+    transform: translateY(-5px);
+}
+
+.destino img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino h2 {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-bottom: 1rem;
+}
+
+.red-social {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.red-social:hover {
+    color: var(--color-acento);
+}
+
+.terminos {
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Estilos adicionales para la página de inicio */
+.ultimas-aventuras, .sobre-mi, .contacto {
+    margin-bottom: 3rem;
+}
+
+.aventuras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.aventura {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.aventura:hover {
+    transform: translateY(-5px);
+}
+
+.aventura img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.aventura h3, .aventura p {
+    padding: 0 1rem;
+}
+
+.ver-mas {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secundario);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mas:hover {
+    background-color: var(--color-primario);
+}
+
+.sobre-mi, .contacto {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.autor-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+}
+.consejos-viaje {
+    background-color: var(--color-fondo);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.consejos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.consejo {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.consejo h3 {
+    color: var(--color-primario);
+    margin-top: 0;
+}
+
+/* Estilos para el planificador de viaje */
+.planifica-viaje {
+    background-color: var(--color-secundario);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.planifica-viaje h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.planificador {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.planificador select,
+.planificador input,
+.planificador button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.planificador button {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: 1 / -1;
+}
+
+.planificador button:hover {
+    background-color: #FFE066;
+}
+
+/* Estilos para el formulario de experiencias de viaje */
+.comparte-experiencia {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comparte-experiencia h2 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-experiencia {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--color-texto);
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+}
+
+.form-grupo textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.checkbox-grupo {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-grupo label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+}
+
+.btn-experiencia {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-experiencia:hover {
+    background-color: var(--color-primario);
+}
+
+/* Media query para hacer el formulario responsive */
+@media (max-width: 768px) {
+    .comparte-experiencia {
+        padding: 1.5rem;
+    }
+    
+    .form-experiencia {
+        gap: 1rem;
+    }
+    
+    .checkbox-grupo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Aventuras - Mi Blog de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mis Aventuras</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="#consejos-viaje">Consejos de Viaje</a></li>
+                <li><a href="#comparte-experiencia">Comparte Experiencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destacado">
+            <img src="RECURSOS/VIAJE.jpg" alt="Destino destacado">
+            <h1>Descubre la magia de viajar: Explora, conéctate y transforma cada destino en una nueva aventura.</h1>
+        </section>
+
+        <section class="ultimas-aventuras">
+            <h2>Últimas Aventuras</h2>
+            <div class="aventuras-grid">
+                <article class="aventura">
+                    <img src="RECURSOS/alpes_suizos.jpeg" alt="Aventura en los Alpes">
+                    <h3>Escalando los Alpes Suizos</h3>
+                    <p>Una experiencia inolvidable entre picos nevados y lagos cristalinos.</p>
+                    <a href="destinos.html" class="ver-mas">Ver mas Aventuras</a>
+                </article>
+                <article class="aventura">
+                    <img src="RECURSOS/safari.jpg" alt="Safari en África">
+                    <h3>Safari en el Serengeti</h3>
+                    <p>Encuentros cercanos con la vida salvaje en las vastas llanuras africanas.</p>
+                    <a href="destinos.html" class="ver-mas">Ver mas Aventuras</a>
+                </article>
+                <article class="aventura">
+                    <img src="RECURSOS/templos.jpg" alt="Templos de Angkor">
+                    <h3>Explorando los Templos de Angkor</h3>
+                    <p>Un viaje al pasado entre las ruinas de una civilización milenaria.</p>
+                    <a href="destinos.html" class="ver-mas">Ver mas Aventuras</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="consejos-viaje" class="consejos-viaje">
+            <h2>Consejos de Viaje</h2>
+            <div class="consejos-grid">
+                <div class="consejo">
+                    <h3>Empaca ligero</h3>
+                    <p>Lleva solo lo esencial para moverte con libertad. Usa prendas versátiles que puedas combinar fácilmente.</p>
+                </div>
+                <div class="consejo">
+                    <h3>Aprende frases básicas</h3>
+                    <p>Conocer algunas palabras en el idioma local te ayudará a conectar con la gente y la cultura del lugar.</p>
+                </div>
+                <div class="consejo">
+                    <h3>Sé flexible</h3>
+                    <p>Los mejores momentos suelen surgir de lo inesperado. Mantén tu itinerario flexible para nuevas experiencias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparte-experiencia" class="comparte-experiencia">
+            <h2>Comparte tu Experiencia de Viaje</h2>
+            <form class="form-experiencia">
+                <div class="form-grupo">
+                    <label for="destino">Destino Visitado</label>
+                    <input type="text" id="destino" name="destino" required placeholder="Ej: Machu Picchu, Perú">
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="fecha">Fecha del Viaje</label>
+                    <input type="month" id="fecha" name="fecha" required>
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="duracion">Duración del Viaje</label>
+                    <select id="duracion" name="duracion" required>
+                        <option value="">Selecciona la duración</option>
+                        <option value="fin-de-semana">Fin de semana</option>
+                        <option value="una-semana">Una semana</option>
+                        <option value="dos-semanas">Dos semanas</option>
+                        <option value="un-mes">Un mes o más</option>
+                    </select>
+                </div>
+                
+                <div class="form-grupo">
+                    <label>Tipo de Viaje</label>
+                    <div class="checkbox-grupo">
+                        <label><input type="checkbox" name="tipo[]" value="aventura"> Aventura</label>
+                        <label><input type="checkbox" name="tipo[]" value="cultural"> Cultural</label>
+                        <label><input type="checkbox" name="tipo[]" value="relax"> Relax</label>
+                        <label><input type="checkbox" name="tipo[]" value="gastronomico"> Gastronómico</label>
+                    </div>
+                </div>
+                <button type="submit">Enviar Experiencia</button>
+        </section>       
+
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#" class="red-social">Facebook</a>
+            <a href="#" class="red-social">Instagram</a>
+            <a href="#" class="red-social">Twitter</a>
+        </div>
+        <a href="#" class="terminos">Términos y Condiciones</a>
+        <p class="copyright">&copy; 2024 Aventuras Sin Fronteras. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
